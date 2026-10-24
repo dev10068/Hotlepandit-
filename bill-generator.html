@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bill Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9e6dc;--panel:#fbfaf6;--ink:#1d1b16;--mute:#6b665a;--line:#cfcabb;--acc:#1f5f4a;--accink:#fff;--paper:#fffefb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171612;--panel:#22211b;--ink:#ece8da;--mute:#a09a88;--line:#3a382e;--acc:#5fc2a0;--accink:#0f1f19;--paper:#f3f0e4}}
+:root[data-theme="dark"]{--bg:#171612;--panel:#22211b;--ink:#ece8da;--mute:#a09a88;--line:#3a382e;--acc:#5fc2a0;--accink:#0f1f19;--paper:#f3f0e4}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:560px;margin:0 auto;padding:14px 12px 40px}
+h1{font-size:20px;margin:6px 0 2px}
+.sub{color:var(--mute);margin:0 0 14px;font-size:13px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-bottom:10px}
+summary{padding:12px 14px;font-weight:600;cursor:pointer}
+.body{padding:0 14px 14px;display:grid;gap:8px}
+label{display:grid;gap:3px;font-size:12px;color:var(--mute)}
+input,select{font:inherit;font-size:15px;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:6px;padding:8px;width:100%;min-width:0}
+input:focus,select:focus,button:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.item{border:1px solid var(--line);border-radius:6px;padding:10px;display:grid;gap:8px}
+button{font:inherit;font-weight:600;border-radius:6px;border:1px solid var(--acc);padding:10px 14px;cursor:pointer;background:transparent;color:var(--acc)}
+button.pri{background:var(--acc);color:var(--accink)}
+button.del{border-color:var(--line);color:var(--mute);padding:6px 10px;justify-self:end}
+.row{display:flex;gap:8px;flex-wrap:wrap}
